@@ -1,5 +1,5 @@
 """
-抓取指定小说的内容
+抓取指定小说内容
 安装requests库 'pip3 install requests'
 安装beautifulsoup4库 'pip3 install beautifulsoup4'
 """
