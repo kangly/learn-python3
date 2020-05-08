@@ -1,4 +1,7 @@
-""" 本地安装redis及'pip3 install redis'安装redis-py客户端后，输出国际惯例 """
+"""
+本地安装redis及'pip3 install redis'安装redis-py客户端后，输出国际惯例
+redis-py 3.2.1 或以上
+"""
 
 from redis import Redis
 

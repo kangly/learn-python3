@@ -1,4 +1,7 @@
-""" 使用 Redis 流实现的消息队列 """
+"""
+使用 Redis 流实现的消息队列
+redis-py 3.2.1 或以上
+"""
 
 from redis import Redis
 from library.message_queue import MessageQueue

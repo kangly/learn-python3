@@ -1,4 +1,7 @@
-""" Redis的先进先出队列 """
+"""
+Redis的先进先出队列
+redis-py 3.2.1 或以上
+"""
 
 from redis import Redis
 from library.fifo_queue import FifoQueue
