@@ -9,11 +9,11 @@ from bs4 import BeautifulSoup
 import time
 
 if __name__ == '__main__':
-    # 要下载的网页
+    # 要抓取的网页
     url = 'https://www.xsbiquge.com/90_90418/'
     # 网站根网址
     root_url = 'https://www.xsbiquge.com'
-    # 保存本地路径
+    # 保存到本地路径
     path = 'file'
 
     # 解析网址
@@ -25,7 +25,7 @@ if __name__ == '__main__':
     # 获取网页所有内容
     soup = BeautifulSoup(req.text, 'html.parser')
 
-    # 查找网页中div的id为main的标签
+    # 查找网页中div的id为list的标签
     list_tag = soup.div(id="list")
 
     # 查看div内所有dd标签
@@ -52,6 +52,7 @@ if __name__ == '__main__':
 
         # 解析网页
         soup = BeautifulSoup(req.text, "html.parser")
+        # 查找网页中div的id为content的标签
         text = soup.div.find(id="content")
         # 转为string类型
         content = str(text)
